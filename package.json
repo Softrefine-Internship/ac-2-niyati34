@@ -1,0 +1,34 @@
+{
+  "name": "ac-2-niyati34",
+  "version": "1.0.0",
+  "description": "The project requires you to create a web page that matches the provided design template. The design template consists of dashboard layout. Your task is to replicate the design as accurately as possible within the given time.",
+  "homepage": "https://github.com/Softrefine-Internship/ac-2-niyati34#readme",
+  "bugs": {
+    "url": "https://github.com/Softrefine-Internship/ac-2-niyati34/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Softrefine-Internship/ac-2-niyati34.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "watch:sass": "sass --watch sass/main.scss css/style.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss css/style.concat.css -u autoprefixer --env 'last 10 versions' -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

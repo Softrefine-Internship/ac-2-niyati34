@@ -1,0 +1,36 @@
+.side-navbar {
+  display: flex;
+  height: 100%;
+  width: 10%;
+  flex-direction: column;
+  justify-content: center;
+
+  .nav-item {
+    position: relative;
+    .sub-nav {
+      &__button {
+        border: none;
+        background-color: transparent;
+        padding: 1.7rem;
+
+        ion-icon {
+          font-size: 2.3rem;
+          color: $color-black;
+        }
+      }
+      &__content {
+        display: none;
+        position: absolute;
+        background-color: $color-light-bg;
+      }
+    }
+  }
+}
+.active,
+.nav-item:hover {
+  background-color: $color-light-bg;
+
+  .sub-nav__content {
+    display: inline;
+  }
+}
