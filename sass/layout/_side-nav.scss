@@ -26,11 +26,10 @@
     }
   }
 }
-.active,
-.nav-item:hover {
-  background-color: $color-light-bg;
+.nav-item.active {
+  background-color: #f0f0f0;
+}
 
-  .sub-nav__content {
-    display: inline;
-  }
+.nav-item.active .sub-nav__content {
+  display: block;
 }
