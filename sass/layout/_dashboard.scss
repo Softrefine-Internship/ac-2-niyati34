@@ -1,0 +1,282 @@
+.main-content {
+  flex: 1;
+  background-color: $color-white;
+  padding: 5rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.search-bar {
+  width: 100%;
+  position: relative;
+
+  ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+    pointer-events: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid $color-light-bg;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+
+    &::placeholder {
+      color: #999;
+      font-weight: 300;
+    }
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.view-all {
+  color: #e67e5f;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.projects-grid {
+  display: grid;
+  grid-auto-columns: minmax(200px, 1fr);
+  gap: 20px;
+  grid-auto-flow: column;
+  margin-bottom: 2.8rem;
+  height: 300px;
+}
+
+.project-card {
+  border-radius: 15px;
+  padding: 25px;
+  position: relative;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.project-card.orange {
+  background-color: $color-orange;
+  .avatar {
+    border: 0.2rem solid $color-orange;
+  }
+}
+
+.project-card.yellow {
+  background-color: $color-yellow;
+
+  .avatar {
+    border: 0.2rem solid $color-yellow;
+  }
+  .team-count {
+    background-color: $color-yellow;
+    color: $color-black;
+    border-radius: 50%;
+    border: 0.17rem solid $color-black;
+  }
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.project-team {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.team-count {
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-left: -1.2rem;
+  z-index: 3;
+}
+
+.team-avatars {
+  display: flex;
+}
+
+.avatar-group {
+  display: flex;
+}
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -1.2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &.avatar1 {
+    z-index: 2;
+  }
+
+  &.avatar2 {
+    z-index: 1;
+  }
+}
+
+.more-options {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  line-height: 1.3;
+}
+
+.project-deadline {
+  font-size: 1rem;
+  color: $color-black;
+  margin-bottom: 4rem;
+}
+
+.project-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 12px;
+  color: $color-black;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.progress-fill.progress-40 {
+  width: 40%;
+}
+
+.progress-fill.progress-75 {
+  width: 75%;
+}
+.reminder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #e8e4e1;
+  border-radius: 12px;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+.reminders-section {
+  margin-bottom: 40px;
+}
+
+.reminder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+
+.reminder-content {
+  flex: 1;
+}
+
+.reminder-time {
+  font-size: 1rem;
+  color: #666;
+}
+
+.reminder-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.reminder-btn {
+  background-color: transparent;
+  border: 1px dashed $color-orange;
+  padding: 8px 16px;
+  border-radius: 5rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+.three-dots {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-dots span {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: $color-orange-light;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.three-dots span:hover {
+  background-color: $color-orange-dark;
+}

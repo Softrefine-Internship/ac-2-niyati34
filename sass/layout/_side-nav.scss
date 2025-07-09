@@ -1,3 +1,6 @@
+.layout {
+  display: flex;
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -6,27 +9,42 @@ nav {
 }
 
 header {
-  background-color: $color-light-bg;
-  height: 7.05rem;
+  background-color: white;
+  height: 10rem;
   display: flex;
   align-items: center;
-  width: 27.65rem;
-  border-bottom: 0.1rem $color-grey-light solid;
+  width: 34rem;
+  border-bottom: 0.1rem $color-grey-light-1 solid;
 
   .logo {
-    padding: 1.5rem;
-    padding-left: 1.2rem;
+    padding: 2.2rem;
+    padding-left: 2.2rem;
   }
   .logo img {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
   }
   .comp-name {
+    height: 100%;
+    width: 90%;
     background-color: $color-light-bg;
+    padding: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-heading {
+    font-size: 2.5rem;
+  }
+  .sub-heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $color-grey;
   }
 }
 .side-navbar {
-  width: 5.7rem;
+  width: 8.8rem;
   z-index: 1100;
 
   .nav-item {
@@ -38,7 +56,8 @@ header {
       &__button {
         border: none;
         background-color: transparent;
-        padding: 1.7rem;
+        padding: 2.2rem;
+        padding-left: 2.9rem;
 
         ion-icon {
           font-size: 2.3rem;
@@ -48,10 +67,10 @@ header {
       &__content {
         display: none;
         position: fixed;
-        top: 7rem;
-        left: 5.7rem;
+        top: 10rem;
+        left: 8.4rem;
         height: 100vh;
-        width: 22rem;
+        width: 25.6rem;
         overflow-y: auto;
         padding: 2.5rem 2rem;
         background-color: $color-light-bg;
@@ -82,6 +101,7 @@ header {
               font-weight: 600;
             }
             .sub-category {
+              width: 70%;
               display: flex;
               gap: 0.5rem;
               font-size: 1.2rem;
