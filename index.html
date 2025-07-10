@@ -601,11 +601,19 @@
           <div class="team-members">
             <h3>Team members</h3>
             <div class="team-avatars-list">
-              <div class="team-avatar member1"></div>
-              <div class="team-avatar member2"></div>
-              <div class="team-avatar member3"></div>
-              <div class="team-avatar member4"></div>
-              <div class="team-avatar member5"></div>
+              <div class="team-avatar member1">
+                <img src="img/person1.jpg" alt="img" />
+              </div>
+              <div class="team-avatar member2">
+                <img src="img/person3.jpg" alt="img" />
+              </div>
+              <div class="team-avatar member3">JR</div>
+              <div class="team-avatar member4">
+                <img src="img/person5.jpg" alt="" />
+              </div>
+              <div class="team-avatar member5">
+                <img src="img/person4.jpg" alt="img" />
+              </div>
               <div class="team-avatar add-member">+</div>
             </div>
           </div>
@@ -634,40 +642,65 @@
             </div>
 
             <div class="tasks-grid">
-              <div class="task-item">
-                <div class="task-status new"></div>
-                <div class="task-text">Add new</div>
+              <!-- Add New -->
+              <div class="task-item add-new">
+                <div class="add-header">Add new</div>
+                <div class="add-plus">+</div>
               </div>
 
+              <!-- New Task -->
               <div class="task-item">
-                <div class="task-status new"></div>
+                <div class="task-top">
+                  <div class="task-status-row">
+                    <span class="dot red"></span>
+                    <span class="status-label">New</span>
+                  </div>
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark">
+                      <ion-icon name="chevron-down-outline"></ion-icon>
+                    </span>
+                  </label>
+                </div>
                 <div class="task-text">Change color palette to more bright</div>
               </div>
 
+              <!-- In Progress Task -->
               <div class="task-item">
-                <div class="task-status progress"></div>
+                <div class="task-top">
+                  <div class="task-status-row">
+                    <span class="dot blue"></span>
+                    <span class="status-label">In progress</span>
+                  </div>
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark">
+                      <ion-icon name="chevron-down-outline"></ion-icon>
+                    </span>
+                  </label>
+                </div>
                 <div class="task-text">Make prototype for mobile version</div>
               </div>
 
-              <div class="task-item">
-                <div class="task-status done"></div>
-                <div class="task-text">Make fixes in homepage</div>
+              <!-- Done Task -->
+              <div class="task-item done">
+                <div class="task-top">
+                  <div class="task-status-row white">
+                    <span class="dot white"></span>
+                    <span class="status-label">Done</span>
+                  </div>
+                  <label class="checkbox">
+                    <input type="checkbox" checked />
+                    <span class="checkmark">
+                      <ion-icon name="chevron-down-outline"></ion-icon>
+                    </span>
+                  </label>
+                </div>
+                <div class="task-text white-text">Make fixes in homepage</div>
               </div>
             </div>
           </div>
-
-          <div class="task-card">
-            <div class="task-card-header">
-              <div class="task-card-status">● In progress</div>
-              <div class="task-card-status">● Done</div>
-            </div>
-            <div class="task-card-title">Make prototype for mobile version</div>
-            <div class="task-card-subtitle">Make fixes in homepage</div>
-            <div class="task-card-icon"></div>
-          </div>
         </div>
-
-        <div class="help-icon">?</div>
       </section>
     </div>
     <script>

@@ -1,5 +1,7 @@
 .layout {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 nav {
@@ -146,6 +148,12 @@ header .sub-heading {
 
 .sub-nav__content__group.active .sub-nav__content__sub-category {
   display: block;
+}
+
+.main-1,
+.main-2 {
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .main-content {
@@ -446,17 +454,17 @@ header .sub-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 5rem;
 }
 
 .add-project-btn {
   background-color: #f0884e;
-  color: white;
+  color: #fff;
   border: none;
   font-family: "poppins";
-  padding: 8px 16px;
+  padding: 1.2rem 2.3rem;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -464,6 +472,10 @@ header .sub-heading {
 
 .add-project-btn:hover {
   background-color: #fcbea4;
+}
+
+.user-details {
+  margin-right: 1rem;
 }
 
 .user-info {
@@ -523,12 +535,14 @@ header .sub-heading {
 .dropdown-arrow ion-icon {
   font-size: 12px;
   color: #f0884e;
-  background-color: #ffe9df;
-  padding: 1rem;
+  background-color: #fff1ea;
+  padding: 0.2rem;
+  border-radius: 50%;
+  border: 0.1rem solid #ffd6c4;
 }
 
 .team-members {
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 }
 
 .team-members h3 {
@@ -540,51 +554,48 @@ header .sub-heading {
 .team-avatars-list {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 1rem;
 }
 
-.team-avatar {
-  width: 40px;
-  height: 40px;
+.team-avatar img {
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
-  border: 2px solid white;
-}
-
-.team-avatar.member1 {
-  background-color: #d4a574;
-}
-
-.team-avatar.member2 {
-  background-color: #8b7355;
+  border: 2px solid #fff;
 }
 
 .team-avatar.member3 {
-  background-color: #e67e5f;
-}
-
-.team-avatar.member4 {
-  background-color: #6b5b73;
-}
-
-.team-avatar.member5 {
-  background-color: #4a5568;
+  background-color: #fff1ea;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  color: #f0884e;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
 }
 
 .team-avatar.add-member {
-  background-color: #f0f0f0;
+  background-color: #fff1ea;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
+  color: #f0884e;
   font-size: 20px;
+  border-radius: 50%;
+  border: 0.18rem dashed #f0884e;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
 }
 
 .stats-grid {
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
@@ -595,132 +606,143 @@ header .sub-heading {
 }
 
 .stat-item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .stat-label {
   font-size: 12px;
   color: #666;
-  margin-bottom: 8px;
+  margin-bottom: 0.2rem;
 }
 
 .stat-value {
-  font-size: 20px;
+  font-size: 1.8rem;
   font-weight: 600;
-  color: #333;
+  color: #0e0e0e;
 }
 
-.daily-tasks {
-  margin-bottom: 30px;
-}
-
-.daily-tasks-header {
+.daily-tasks .daily-tasks-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
-
-.daily-tasks-header h3 {
-  font-size: 16px;
-  font-weight: 600;
+.daily-tasks .daily-tasks-header h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-
-.edit-btn {
-  color: #e67e5f;
-  font-size: 12px;
-  cursor: pointer;
+.daily-tasks .daily-tasks-header .edit-btn {
+  color: #f0884e;
+  font-weight: 500;
   text-decoration: none;
 }
-
-.tasks-grid {
+.daily-tasks .tasks-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
-
-.task-item {
-  background-color: white;
-  border-radius: 8px;
-  padding: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.daily-tasks .task-item {
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 150px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.daily-tasks .task-item.done {
+  background: #f0884e;
+}
+.daily-tasks .task-item.add-new {
+  background-color: #f2ece2;
+}
+.daily-tasks .task-item.add-new .add-header {
+  font-size: 16px;
+  font-weight: 500;
+}
+.daily-tasks .task-item.add-new .add-plus {
+  font-size: 24px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.daily-tasks .task-top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+.daily-tasks .task-top .task-status-row {
   display: flex;
   align-items: center;
+  gap: 6px;
   font-size: 12px;
+  font-weight: 500;
 }
-
-.task-status {
+.daily-tasks .task-top .task-status-row.white {
+  color: #fff;
+}
+.daily-tasks .task-top .task-status-row .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin-right: 8px;
-  flex-shrink: 0;
 }
-
-.task-status.new {
-  background-color: #e67e5f;
+.daily-tasks .task-top .task-status-row .dot.red {
+  background-color: #ff6246;
 }
-
-.task-status.progress {
-  background-color: #4a90e2;
+.daily-tasks .task-top .task-status-row .dot.blue {
+  background-color: #56d8b3;
 }
-
-.task-status.done {
-  background-color: #7ed321;
+.daily-tasks .task-top .task-status-row .dot.white {
+  background-color: #fff;
 }
-
-.task-text {
-  flex: 1;
-  font-size: 12px;
-  line-height: 1.3;
-}
-
-.task-card {
-  background-color: #e67e5f;
-  border-radius: 15px;
-  padding: 20px;
-  color: white;
+.daily-tasks .task-top .checkbox {
   position: relative;
-  margin-bottom: 20px;
-}
-
-.task-card-header {
+  width: 20px;
+  height: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
 }
-
-.task-card-status {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 10px;
+.daily-tasks .task-top .checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-
-.task-card-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.task-card-subtitle {
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-.task-card-icon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+.daily-tasks .task-top .checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #f0884e;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+.daily-tasks .task-top .checkbox .checkmark ion-icon {
+  font-size: 14px;
+  opacity: 0;
+  color: #fff;
+}
+.daily-tasks .task-top .checkbox input:checked + .checkmark {
+  background-color: #0e0e0e;
+  border-color: #0e0e0e;
+}
+.daily-tasks .task-top .checkbox input:checked + .checkmark ion-icon {
+  opacity: 1;
+}
+.daily-tasks .task-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 70%;
+  margin-top: 12px;
+}
+.daily-tasks .task-text.white-text {
+  color: #fff;
 }
 
 .three-dots-1 {
@@ -754,6 +776,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Poppins";
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
