@@ -15,7 +15,6 @@ header {
   height: 10rem;
   display: flex;
   align-items: center;
-  width: 34rem;
   border-bottom: 0.1rem $color-grey-light-1 solid;
 
   .logo {
@@ -27,12 +26,13 @@ header {
     width: 4rem;
   }
   .comp-name {
+    display: none;
     height: 100%;
     width: 90%;
     background-color: $color-light-bg;
     padding: 3rem;
     padding-bottom: 1rem;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -69,16 +69,32 @@ header {
       &__content {
         display: none;
         position: fixed;
-        top: 10rem;
+        top: 0;
         left: 8.4rem;
         height: 100vh;
         width: 25.6rem;
         overflow-y: auto;
-        padding: 2.5rem 2rem;
         background-color: $color-light-bg;
         z-index: 1000;
+        .comp-name-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 2.28rem;
+          border-bottom: 0.1rem $color-grey-light-1 solid;
+          .main-heading-1 {
+            font-size: 2.5rem;
+          }
+          .sub-heading-1 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: $color-grey;
+          }
+        }
+
         &__group {
           margin: 0.8rem 0;
+          padding: 0.5rem 2.5rem;
         }
         &--button {
           border: none;
@@ -150,4 +166,19 @@ header {
 
 .sub-nav__content__group.active .sub-nav__content__sub-category {
   display: block;
+}
+.question-mark {
+  background-color: $color-black;
+  border-radius: 50px;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+.question-mark ion-icon {
+  color: $color-white;
+  font-size: 1.6rem;
 }

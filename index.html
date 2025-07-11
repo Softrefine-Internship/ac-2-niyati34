@@ -29,10 +29,11 @@
         <header>
           <div class="logo"><img src="img/logo.svg" alt="logo" /></div>
           <div class="comp-name">
-            <h1 class="main-heading">Ziferblat</h1>
-            <h3 class="sub-heading">Teamwork & time management</h3>
+            <h1 class="main-heading-1">Ziferblat</h1>
+            <h3 class="sub-heading-1">Teamwork & time management</h3>
           </div>
         </header>
+
         <div class="nav-wrapper">
           <div class="side-navbar">
             <div class="nav-item active">
@@ -41,6 +42,10 @@
                   <ion-icon name="home-outline"></ion-icon>
                 </button>
                 <div class="sub-nav__content">
+                  <div class="comp-name-1">
+                    <h1 class="main-heading-1">Ziferblat</h1>
+                    <h3 class="sub-heading-1">Teamwork & time management</h3>
+                  </div>
                   <div class="sub-nav__content__group">
                     <button class="sub-nav__content--button">
                       Team<ion-icon
@@ -182,6 +187,10 @@
                   <ion-icon name="people-outline"></ion-icon>
                 </button>
                 <div class="sub-nav__content">
+                  <div class="comp-name-1">
+                    <h1 class="main-heading-1">Ziferblat</h1>
+                    <h3 class="sub-heading-1">Teamwork & time management</h3>
+                  </div>
                   <div class="sub-nav__content__group">
                     <button class="sub-nav__content--button">
                       Team<ion-icon
@@ -237,6 +246,10 @@
                   <ion-icon name="calendar-clear-outline"></ion-icon>
                 </button>
                 <div class="sub-nav__content">
+                  <div class="comp-name-1">
+                    <h1 class="main-heading-1">Ziferblat</h1>
+                    <h3 class="sub-heading-1">Teamwork & time management</h3>
+                  </div>
                   <div class="sub-nav__content__group">
                     <button class="sub-nav__content--button">
                       Team<ion-icon
@@ -292,6 +305,10 @@
                   <ion-icon name="checkbox-outline"></ion-icon>
                 </button>
                 <div class="sub-nav__content">
+                  <div class="comp-name-1">
+                    <h1 class="main-heading-1">Ziferblat</h1>
+                    <h3 class="sub-heading-1">Teamwork & time management</h3>
+                  </div>
                   <div class="sub-nav__content__group">
                     <button class="sub-nav__content--button">
                       Team<ion-icon
@@ -347,6 +364,10 @@
                   <ion-icon name="time-outline"></ion-icon>
                 </button>
                 <div class="sub-nav__content">
+                  <div class="comp-name-1">
+                    <h1 class="main-heading-1">Ziferblat</h1>
+                    <h3 class="sub-heading-1">Teamwork & time management</h3>
+                  </div>
                   <div class="sub-nav__content__group">
                     <button class="sub-nav__content--button">
                       Team<ion-icon
@@ -402,6 +423,10 @@
                   <ion-icon name="chatbubble-outline"></ion-icon>
                 </button>
                 <div class="sub-nav__content">
+                  <div class="comp-name-1">
+                    <h1 class="main-heading-1">Ziferblat</h1>
+                    <h3 class="sub-heading-1">Teamwork & time management</h3>
+                  </div>
                   <div class="sub-nav__content__group">
                     <button class="sub-nav__content--button">
                       Team<ion-icon
@@ -722,6 +747,15 @@
 
           item.classList.add("active");
         });
+      });
+      // Add this to your existing JavaScript
+      const mobileMenuToggle = document.createElement("button");
+      mobileMenuToggle.className = "mobile-menu-toggle";
+      mobileMenuToggle.innerHTML = "☰";
+      document.querySelector("header").appendChild(mobileMenuToggle);
+
+      mobileMenuToggle.addEventListener("click", () => {
+        document.querySelector(".nav-wrapper").classList.toggle("active");
       });
     </script>
   </body>
