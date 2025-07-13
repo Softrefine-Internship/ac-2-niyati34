@@ -29,454 +29,203 @@
         <header>
           <div class="logo"><img src="img/logo.svg" alt="logo" /></div>
           <div class="comp-name">
-            <h1 class="main-heading-1">Ziferblat</h1>
-            <h3 class="sub-heading-1">Teamwork & time management</h3>
+            <h1 class="main-heading">Ziferblat</h1>
+            <h3 class="sub-heading">Teamwork & time management</h3>
           </div>
         </header>
 
         <div class="nav-wrapper">
-          <div class="side-navbar">
-            <div class="nav-item active">
-              <div class="sub-nav">
-                <button class="sub-nav__button">
-                  <ion-icon name="home-outline"></ion-icon>
+          <input type="radio" name="menu" id="home" checked />
+          <input type="radio" name="menu" id="team" />
+          <input type="radio" name="menu" id="tasks" />
+          <input type="radio" name="menu" id="reminders" />
+          <input type="radio" name="menu" id="chat" />
+
+          <div class="sidebar">
+            <label for="home" class="icon-label"
+              ><div class="icon"><ion-icon name="home-outline"></ion-icon></div
+            ></label>
+            <label for="team" class="icon-label"
+              ><div class="icon">
+                <ion-icon name="people-outline"></ion-icon></div
+            ></label>
+            <label for="tasks" class="icon-label"
+              ><div class="icon">
+                <ion-icon name="checkbox-outline"></ion-icon></div
+            ></label>
+            <label for="reminders" class="icon-label"
+              ><div class="icon"><ion-icon name="time-outline"></ion-icon></div
+            ></label>
+            <label for="chat" class="icon-label"
+              ><div class="icon">
+                <ion-icon name="chatbubble-outline"></ion-icon></div
+            ></label>
+          </div>
+          <div class="content">
+            <div class="panel panel-home">
+              <div class="sub-nav__content__group">
+                <button class="sub-nav__content--button">
+                  Team<ion-icon
+                    class="right-arr"
+                    name="chevron-forward-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="down-arr"
+                    name="chevron-down-outline"
+                  ></ion-icon>
                 </button>
-                <div class="sub-nav__content">
-                  <div class="comp-name-1">
-                    <h1 class="main-heading-1">Ziferblat</h1>
-                    <h3 class="sub-heading-1">Teamwork & time management</h3>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Team<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Projects<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All projects
-                          <div class="sub-category__number">(4)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Design system
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Make unique design for customer
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >User flow
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
+                <div class="sub-nav__content__sub-category">
+                  <a href="#" class="sub-category"></a>
+                </div>
+              </div>
+              <div class="sub-nav__content__group">
+                <button class="sub-nav__content--button">
+                  Projects<ion-icon
+                    class="right-arr"
+                    name="chevron-forward-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="down-arr active"
+                    name="chevron-down-outline"
+                  ></ion-icon>
+                </button>
+                <ul class="sub-nav__content__sub-category">
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >All projects
+                      <div class="sub-category__number">(4)</div></a
+                    >
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >Design system
+                      <div class="sub-category__number"></div
+                    ></a>
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >Make unique design for customer
+                      <div class="sub-category__number"></div
+                    ></a>
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >User flow
+                      <div class="sub-category__number"></div
+                    ></a>
+                  </li>
 
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new project</a>
-                      </li>
-                    </ul>
-                  </div>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category">Add new project</a>
+                  </li>
+                </ul>
+              </div>
 
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Tasks<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All tasks
-                          <div class="sub-category__number">(3)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >New
-                          <div class="sub-category__number">(1)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >In progress
-                          <div class="sub-category__number">(1)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Done
-                          <div class="sub-category__number">(1)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new task</a>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="sub-nav__content__group">
+                <button class="sub-nav__content--button">
+                  Tasks<ion-icon
+                    class="right-arr"
+                    name="chevron-forward-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="down-arr active"
+                    name="chevron-down-outline"
+                  ></ion-icon>
+                </button>
+                <ul class="sub-nav__content__sub-category">
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >All tasks
+                      <div class="sub-category__number">(3)</div></a
+                    >
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >New
+                      <div class="sub-category__number">(1)</div></a
+                    >
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >In progress
+                      <div class="sub-category__number">(1)</div></a
+                    >
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category"
+                      >Done
+                      <div class="sub-category__number">(1)</div></a
+                    >
+                  </li>
+                  <li class="sub-nav__content__sub-category-item">
+                    <a href="#" class="sub-category">Add new task</a>
+                  </li>
+                </ul>
+              </div>
 
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Reminders<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
+              <div class="sub-nav__content__group">
+                <button class="sub-nav__content--button">
+                  Reminders<ion-icon
+                    class="right-arr"
+                    name="chevron-forward-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="down-arr"
+                    name="chevron-down-outline"
+                  ></ion-icon>
+                </button>
+                <div class="sub-nav__content__sub-category">
+                  <a href="#" class="sub-category"></a>
+                </div>
+              </div>
 
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Messenger<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
+              <div class="sub-nav__content__group">
+                <button class="sub-nav__content--button">
+                  Messenger<ion-icon
+                    class="right-arr"
+                    name="chevron-forward-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="down-arr"
+                    name="chevron-down-outline"
+                  ></ion-icon>
+                </button>
+                <div class="sub-nav__content__sub-category">
+                  <a href="#" class="sub-category"></a>
                 </div>
               </div>
             </div>
-
-            <div class="nav-item">
-              <div class="sub-nav">
-                <button class="sub-nav__button">
-                  <ion-icon name="people-outline"></ion-icon>
-                </button>
-                <div class="sub-nav__content">
-                  <div class="comp-name-1">
-                    <h1 class="main-heading-1">Ziferblat</h1>
-                    <h3 class="sub-heading-1">Teamwork & time management</h3>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Team<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Projects<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All projects
-                          <div class="sub-category__number">(4)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Design system
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new project</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div class="panel panel-team">
+              <p>All Members</p>
+              <p>Teams</p>
+              <p>Roles</p>
+              <p>Invites</p>
+              <p>Requests</p>
             </div>
-
-            <div class="nav-item">
-              <div class="sub-nav">
-                <button class="sub-nav__button">
-                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                </button>
-                <div class="sub-nav__content">
-                  <div class="comp-name-1">
-                    <h1 class="main-heading-1">Ziferblat</h1>
-                    <h3 class="sub-heading-1">Teamwork & time management</h3>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Team<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Projects<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All projects
-                          <div class="sub-category__number">(4)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Design system
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new project</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div class="panel panel-tasks">
+              <p>All Tasks</p>
+              <p>In Progress</p>
+              <p>Completed</p>
+              <p>Upcoming</p>
+              <p>New Task</p>
             </div>
-
-            <div class="nav-item">
-              <div class="sub-nav">
-                <button class="sub-nav__button">
-                  <ion-icon name="checkbox-outline"></ion-icon>
-                </button>
-                <div class="sub-nav__content">
-                  <div class="comp-name-1">
-                    <h1 class="main-heading-1">Ziferblat</h1>
-                    <h3 class="sub-heading-1">Teamwork & time management</h3>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Team<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Projects<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All projects
-                          <div class="sub-category__number">(4)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Design system
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new project</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div class="panel panel-reminders">
+              <p>View Reminders</p>
+              <p>Set Reminder</p>
+              <p>Recurring</p>
+              <p>Urgent</p>
+              <p>Expired</p>
             </div>
-
-            <div class="nav-item">
-              <div class="sub-nav">
-                <button class="sub-nav__button">
-                  <ion-icon name="time-outline"></ion-icon>
-                </button>
-                <div class="sub-nav__content">
-                  <div class="comp-name-1">
-                    <h1 class="main-heading-1">Ziferblat</h1>
-                    <h3 class="sub-heading-1">Teamwork & time management</h3>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Team<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Projects<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All projects
-                          <div class="sub-category__number">(4)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Design system
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new project</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="nav-item">
-              <div class="sub-nav">
-                <button class="sub-nav__button">
-                  <ion-icon name="chatbubble-outline"></ion-icon>
-                </button>
-                <div class="sub-nav__content">
-                  <div class="comp-name-1">
-                    <h1 class="main-heading-1">Ziferblat</h1>
-                    <h3 class="sub-heading-1">Teamwork & time management</h3>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Team<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <div class="sub-nav__content__sub-category">
-                      <a href="#" class="sub-category"></a>
-                    </div>
-                  </div>
-                  <div class="sub-nav__content__group">
-                    <button class="sub-nav__content--button">
-                      Projects<ion-icon
-                        class="right-arr"
-                        name="chevron-forward-outline"
-                      ></ion-icon
-                      ><ion-icon
-                        class="down-arr active"
-                        name="chevron-down-outline"
-                      ></ion-icon>
-                    </button>
-                    <ul class="sub-nav__content__sub-category">
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >All projects
-                          <div class="sub-category__number">(4)</div></a
-                        >
-                      </li>
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category"
-                          >Design system
-                          <div class="sub-category__number"></div
-                        ></a>
-                      </li>
-
-                      <li class="sub-nav__content__sub-category-item">
-                        <a href="#" class="sub-category">Add new project</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div class="panel panel-chat">
+              <p>Inbox</p>
+              <p>Groups</p>
+              <p>New Chat</p>
+              <p>Archive</p>
+              <p>Settings</p>
             </div>
           </div>
         </div>
+
         <div class="question-mark">
           <a href="#" class="nav-link"
             ><ion-icon name="help-outline"></ion-icon>
@@ -748,7 +497,6 @@
           item.classList.add("active");
         });
       });
-      // Add this to your existing JavaScript
       const mobileMenuToggle = document.createElement("button");
       mobileMenuToggle.className = "mobile-menu-toggle";
       mobileMenuToggle.innerHTML = "☰";

@@ -3,11 +3,26 @@
   height: 100vh;
   overflow: hidden;
 }
+.nav-wrapper {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 84px;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
 nav {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  width: 50rem;
+  position: relative;
 }
 
 header {
@@ -26,7 +41,7 @@ header {
     width: 4rem;
   }
   .comp-name {
-    display: none;
+    display: flex;
     height: 100%;
     width: 90%;
     background-color: $color-light-bg;
@@ -44,92 +59,102 @@ header {
     color: $color-grey;
   }
 }
-.side-navbar {
-  width: 8.8rem;
-  z-index: 1100;
+.icon {
+  font-size: 2.5rem;
+  color: $color-black;
+  padding: 1.8rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.icon:hover,
+.icon.active {
+  background-color: $color-light-bg;
+}
+.content {
+  flex: 1;
+  background: $color-light-bg;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.panel {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+input[type="radio"] {
+  display: none;
+}
+#home:checked ~ .content .panel-home,
+#team:checked ~ .content .panel-team,
+#tasks:checked ~ .content .panel-tasks,
+#reminders:checked ~ .content .panel-reminders,
+#chat:checked ~ .content .panel-chat {
+  display: flex;
+}
+label {
+  width: 100%;
+}
+.icon-label {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.sub-nav {
+  &__button {
+    border: none;
+    background-color: transparent;
+    padding: 2.2rem;
+    padding-left: 2.9rem;
 
-  .nav-item {
-    position: relative;
-    &.active {
-      background-color: $color-light-bg;
+    ion-icon {
+      font-size: 2.3rem;
+      color: $color-black;
     }
-    .sub-nav {
-      &__button {
-        border: none;
-        background-color: transparent;
-        padding: 2.2rem;
-        padding-left: 2.9rem;
+  }
+  &__content {
+    height: 100vh;
+    background-color: $color-light-bg;
+    &__group {
+      margin: 0.2rem 0;
+      padding: 0.4rem 1.4rem;
+    }
+    &--button {
+      border: none;
+      background-color: transparent;
+      font-weight: 600;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.4rem;
 
-        ion-icon {
-          font-size: 2.3rem;
-          color: $color-black;
-        }
+      ion-icon {
+        font-size: 1.6rem;
+        color: $color-black;
       }
-      &__content {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 8.4rem;
-        height: 100vh;
-        width: 25.6rem;
-        overflow-y: auto;
-        background-color: $color-light-bg;
-        z-index: 1000;
-        .comp-name-1 {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 2.28rem;
-          border-bottom: 0.1rem $color-grey-light-1 solid;
-          .main-heading-1 {
-            font-size: 2.5rem;
-          }
-          .sub-heading-1 {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: $color-grey;
-          }
-        }
-
-        &__group {
-          margin: 0.8rem 0;
-          padding: 0.5rem 2.5rem;
-        }
-        &--button {
-          border: none;
-          background-color: transparent;
+    }
+    &__sub-category {
+      list-style: none;
+      &-item {
+        margin: 0.5rem 0;
+        &:last-child {
           font-weight: 600;
-          display: flex;
-          width: 100%;
-          align-items: center;
-          justify-content: space-between;
-          font-size: 1.4rem;
-
-          ion-icon {
-            font-size: 1.6rem;
-            color: $color-black;
-          }
         }
-        &__sub-category {
-          list-style: none;
-          &-item {
-            margin: 0.5rem 0;
-            &:last-child {
-              font-weight: 600;
-            }
-            .sub-category {
-              width: 70%;
-              display: flex;
-              gap: 0.5rem;
-              font-size: 1.2rem;
-              padding-left: 2rem;
-            }
-            a {
-              text-decoration: none;
-              color: $color-grey;
-              font-family: "Poppins";
-            }
-          }
+        .sub-category {
+          width: 70%;
+          display: flex;
+          gap: 0.5rem;
+          font-size: 1.2rem;
+          padding-left: 2rem;
+        }
+        a {
+          text-decoration: none;
+          color: $color-grey;
+          font-family: "Poppins";
         }
       }
     }
@@ -167,6 +192,9 @@ header {
   display: block;
 }
 .question-mark {
+  position: absolute;
+  bottom: 2.3rem;
+  left: 2.3rem;
   background-color: $color-black;
   border-radius: 50px;
   width: 4rem;
@@ -174,8 +202,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2.2rem;
-  margin-bottom: 1.8rem;
 }
 .question-mark ion-icon {
   color: $color-white;
