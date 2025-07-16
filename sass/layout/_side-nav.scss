@@ -8,7 +8,7 @@
   height: 100vh;
 }
 .sidebar {
-  width: 84px;
+  width: 8.4rem;
   background-color: $color-white;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@ header {
     width: 90%;
     background-color: $color-light-bg;
     padding: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -54,8 +54,10 @@ header {
     font-size: 2.5rem;
   }
   .sub-heading {
-    font-size: 1.1rem;
+    width: 100%;
+    font-size: 1.2rem;
     font-weight: 500;
+    line-height: 0.8;
     color: $color-grey;
   }
 }
@@ -130,10 +132,11 @@ label {
       width: 100%;
       align-items: center;
       justify-content: space-between;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
+      font-family: "Poppins";
 
       ion-icon {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: $color-black;
       }
     }
@@ -145,10 +148,10 @@ label {
           font-weight: 600;
         }
         .sub-category {
-          width: 70%;
+          width: 80%;
           display: flex;
           gap: 0.5rem;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           padding-left: 2rem;
         }
         a {
@@ -196,7 +199,7 @@ label {
   bottom: 2.3rem;
   left: 2.3rem;
   background-color: $color-black;
-  border-radius: 50px;
+  border-radius: 5rem;
   width: 4rem;
   height: 4rem;
   display: flex;

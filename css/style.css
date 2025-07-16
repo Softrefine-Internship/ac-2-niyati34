@@ -10,7 +10,7 @@
 }
 
 .sidebar {
-  width: 84px;
+  width: 8.4rem;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ header .comp-name {
   width: 90%;
   background-color: #f2ece2;
   padding: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -57,8 +57,10 @@ header .main-heading {
   font-size: 2.5rem;
 }
 header .sub-heading {
-  font-size: 1.1rem;
+  width: 100%;
+  font-size: 1.2rem;
   font-weight: 500;
+  line-height: 0.8;
   color: #333;
 }
 
@@ -140,10 +142,11 @@ label {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
+  font-family: "Poppins";
 }
 .sub-nav__content--button ion-icon {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #0e0e0e;
 }
 .sub-nav__content__sub-category {
@@ -156,10 +159,10 @@ label {
   font-weight: 600;
 }
 .sub-nav__content__sub-category-item .sub-category {
-  width: 70%;
+  width: 80%;
   display: flex;
   gap: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-left: 2rem;
 }
 .sub-nav__content__sub-category-item a {
@@ -206,7 +209,7 @@ label {
   bottom: 2.3rem;
   left: 2.3rem;
   background-color: #0e0e0e;
-  border-radius: 50px;
+  border-radius: 5rem;
   width: 4rem;
   height: 4rem;
   display: flex;
@@ -225,8 +228,9 @@ label {
 
 .main-content {
   flex: 1;
+  height: 100%;
   background-color: #fff;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .header {
@@ -246,18 +250,18 @@ label {
 .search-bar ion-icon {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 1.5rem;
   transform: translateY(-50%);
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #999;
   pointer-events: none;
 }
 .search-bar input {
   width: 100%;
-  padding: 12px 20px 12px 40px;
-  border: 2px solid #f2ece2;
-  border-radius: 25px;
-  font-size: 14px;
+  padding: 1.2rem 2rem 1.2rem 4rem;
+  border: 0.2rem solid #f2ece2;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
   outline: none;
 }
 .search-bar input::placeholder {
@@ -273,35 +277,36 @@ label {
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .view-all {
   color: #e67e5f;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .projects-grid {
   display: grid;
-  grid-auto-columns: minmax(200px, 1fr);
-  gap: 20px;
+  grid-auto-columns: minmax(20rem, 1fr);
+  gap: 2rem;
   grid-auto-flow: column;
-  margin-bottom: 1rem;
-  height: 300px;
+  margin-bottom: 6rem;
+  height: 30rem;
 }
 
 .project-card {
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
   position: relative;
-  height: 300px;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0rem 0.8rem 2.4rem;
 }
 
 .project-card.orange {
@@ -321,7 +326,7 @@ label {
   background-color: #fce6bd;
   color: #0e0e0e;
   border-radius: 50%;
-  border: 0.17rem solid #0e0e0e;
+  border: 0.2rem solid #0e0e0e;
 }
 
 .project-header {
@@ -341,12 +346,12 @@ label {
   background-color: #333;
   color: white;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 4.3rem;
+  height: 4.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 1.7rem;
   margin-left: -1.2rem;
   z-index: 3;
 }
@@ -360,10 +365,10 @@ label {
 }
 
 .avatar {
-  width: 3rem;
-  height: 3rem;
+  width: 4.3rem;
+  height: 4.3rem;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 0.3rem solid white;
   margin-left: -1.2rem;
   overflow: hidden;
   display: flex;
@@ -384,20 +389,20 @@ label {
 
 .more-options {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #666;
 }
 
 .project-title {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 0.7rem;
   line-height: 1.3;
 }
 
 .project-deadline {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #0e0e0e;
   margin-bottom: 4rem;
 }
@@ -407,23 +412,23 @@ label {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #0e0e0e;
 }
 
 .progress-bar {
   width: 100%;
-  height: 4px;
+  height: 0.6rem;
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
-  margin-top: 8px;
+  border-radius: 0.4rem;
+  margin-top: 0.8rem;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background-color: #333;
-  border-radius: 2px;
+  background-color: #020202;
+  border-radius: 0.4rem;
   transition: width 0.3s;
 }
 
@@ -440,15 +445,15 @@ label {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
-  border: 1px solid #e8e4e1;
-  border-radius: 12px;
-  gap: 2.5rem;
+  padding: 2rem;
+  border: 0.1rem solid #e8e4e1;
+  border-radius: 1.2rem;
+  gap: 1.8rem;
   margin-top: 1rem;
 }
 
 .reminders-section {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .reminder-item {
@@ -456,29 +461,36 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 7rem;
+  gap: 3rem;
 }
 
 .reminder-time {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: #666;
 }
 
 .reminder-title {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 4px;
-  width: 70%;
+  margin-bottom: 0.4rem;
+  width: 90%;
 }
 
 .reminder-btn {
+  width: 45%;
   background-color: transparent;
-  border: 1px dashed #fcbea4;
-  padding: 8px 16px;
+  border: 0.2rem dashed #fcbea4;
+  padding: 0.8rem 1rem;
   border-radius: 5rem;
-  font-size: 12px;
+  font-size: 1.4rem;
   cursor: pointer;
+}
+.reminder-btn:hover {
+  background-color: #f0884e;
+  color: white;
+  border: 0.2rem dashed #0e0e0e;
 }
 
 .three-dots {
@@ -506,11 +518,14 @@ label {
   height: 100vh;
 }
 
+.main-2 {
+  width: 45%;
+}
+
 .right-sidebar {
   height: 100vh;
   background-color: #fff;
   padding: 5rem;
-  padding-top: 3.8rem;
   box-shadow: -0.1rem 0px 2rem 0.1rem #e9e9e9;
 }
 
@@ -518,7 +533,7 @@ label {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 3.4rem;
 }
 
 .top-row {
@@ -534,7 +549,7 @@ label {
   border: none;
   font-family: "poppins";
   padding: 1.2rem 2.3rem;
-  border-radius: 20px;
+  border-radius: 2rem;
   font-size: 1.2rem;
   font-weight: 300;
   cursor: pointer;
@@ -575,28 +590,28 @@ label {
 }
 .notification-wrapper .notification-dot {
   position: absolute;
-  top: 4px;
+  top: 0.4rem;
   right: 0.3rem;
   width: 0.7rem;
   height: 0.7rem;
-  border: 0.01px solid #fff;
+  border: 0.001rem solid #fff;
   background: #f0884e;
   border-radius: 50%;
   z-index: 1;
 }
 
 .user-avatar img {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   background-color: #d4a574;
 }
 
 .user-name {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 
 .user-type {
@@ -604,7 +619,7 @@ label {
 }
 
 .dropdown-arrow ion-icon {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #f0884e;
   background-color: #fff1ea;
   padding: 0.2rem;
@@ -617,9 +632,9 @@ label {
 }
 
 .team-members h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .team-avatars-list {
@@ -633,7 +648,7 @@ label {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 0.2rem solid #fff;
 }
 
 .team-avatar.member3 {
@@ -646,7 +661,7 @@ label {
   justify-content: center;
   border-radius: 50%;
   font-size: 1.5rem;
-  border: 2px solid #fff;
+  border: 0.2rem solid #fff;
 }
 
 .team-avatar.add-member {
@@ -655,7 +670,7 @@ label {
   align-items: center;
   justify-content: center;
   color: #f0884e;
-  font-size: 20px;
+  font-size: 2rem;
   border-radius: 50%;
   border: 0.18rem dashed #f0884e;
   width: 3rem;
@@ -665,25 +680,26 @@ label {
 
 .stats-grid {
   background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
 }
 
 .stats-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1rem;
 }
 
 .stat-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .stat-label {
-  font-size: 12px;
+  font-size: 1.4rem;
   color: #666;
   margin-bottom: 0.2rem;
 }
@@ -711,24 +727,21 @@ label {
   text-decoration: none;
 }
 .daily-tasks .tasks-grid {
-  padding: 5px;
-  max-height: 290px;
-  overflow-y: auto;
-  padding-right: 5px;
+  padding: 0.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 1.6rem;
 }
 .daily-tasks .tasks-grid::-webkit-scrollbar {
   display: none;
 }
 .daily-tasks .task-item {
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
   min-height: 14rem;
   position: relative;
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -740,14 +753,14 @@ label {
   background-color: #f2ece2;
 }
 .daily-tasks .task-item.add-new .add-header {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .daily-tasks .task-item.add-new .add-plus {
-  font-size: 24px;
+  font-size: 2.4rem;
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  bottom: 1.6rem;
+  right: 1.6rem;
 }
 .daily-tasks .task-top {
   display: flex;
@@ -758,16 +771,16 @@ label {
 .daily-tasks .task-top .task-status-row {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 12px;
+  gap: 0.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 .daily-tasks .task-top .task-status-row.white {
   color: #fff;
 }
 .daily-tasks .task-top .task-status-row .dot {
-  width: 8px;
-  height: 8px;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
 }
 .daily-tasks .task-top .task-status-row .dot.red {
@@ -781,8 +794,8 @@ label {
 }
 .daily-tasks .task-top .checkbox {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
 }
@@ -792,10 +805,10 @@ label {
   height: 0;
 }
 .daily-tasks .task-top .checkbox .checkmark {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border: 1.5px solid #f0884e;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -803,7 +816,7 @@ label {
   transition: all 0.2s ease;
 }
 .daily-tasks .task-top .checkbox .checkmark ion-icon {
-  font-size: 14px;
+  font-size: 1.4rem;
   opacity: 0;
   color: #fff;
 }
@@ -815,11 +828,11 @@ label {
   opacity: 1;
 }
 .daily-tasks .task-text {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.4;
   width: 90%;
-  margin-top: 12px;
+  margin-top: 1.2rem;
 }
 .daily-tasks .task-text.white-text {
   color: #fff;
@@ -841,9 +854,26 @@ label {
   transition: background-color 0.2s;
 }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 80.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
 @media (max-width: 480px) {
   html {
-    font-size: 50%;
+    font-size: 58%;
   }
   .layout {
     flex-direction: column;
@@ -862,7 +892,7 @@ label {
     right: 0;
     z-index: 1200;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   }
   header {
     display: flex;
@@ -911,7 +941,6 @@ label {
   .nav-wrapper {
     display: none;
     position: fixed;
-    top: 6rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -928,7 +957,7 @@ label {
     flex-direction: column;
     width: 8rem;
     background-color: #f8f9fa;
-    border-right: 1px solid #eee;
+    border-right: 0.1rem solid #eee;
     padding: 2rem 0;
   }
   .sidebar .icon-label {
@@ -972,7 +1001,7 @@ label {
   }
   .panel p {
     padding: 1.5rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0.1rem solid #eee;
     font-size: 1.4rem;
     margin: 0;
     cursor: pointer;
@@ -1051,10 +1080,13 @@ label {
     overflow-y: auto;
     padding: 2rem;
   }
+  .content {
+    padding-top: 7rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 666px) {
   html {
-    font-size: 55%;
+    font-size: 58%;
   }
   .layout {
     flex-direction: column;
@@ -1073,7 +1105,7 @@ label {
     right: 0;
     z-index: 1200;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   }
   header {
     display: flex;
@@ -1122,7 +1154,6 @@ label {
   .nav-wrapper {
     display: none;
     position: fixed;
-    top: 7rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1139,7 +1170,7 @@ label {
     flex-direction: column;
     width: 8rem;
     background-color: #f8f9fa;
-    border-right: 1px solid #eee;
+    border-right: 0.1rem solid #eee;
     padding: 2rem 0;
   }
   .sidebar .icon-label {
@@ -1183,7 +1214,7 @@ label {
   }
   .panel p {
     padding: 1.8rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0.1rem solid #eee;
     font-size: 1.5rem;
     margin: 0;
     cursor: pointer;
@@ -1193,7 +1224,7 @@ label {
     padding-left: 1rem;
   }
   .sub-nav__content__group {
-    border-bottom: 1px solid #eee;
+    border-bottom: 0.1rem solid #eee;
   }
   .sub-nav__content--button {
     width: 100%;
@@ -1258,10 +1289,22 @@ label {
   .reminders-section {
     margin-bottom: 0;
   }
+  .content {
+    padding-top: 7rem;
+  }
 }
 @media (min-width: 667px) {
   .mobile-menu-toggle {
     display: none !important;
+  }
+  .mobile-menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 1rem;
+    color: #333;
+    z-index: 1400;
   }
 }
 .nav-wrapper,
@@ -1278,14 +1321,27 @@ label {
     padding: 0.3rem 1.1rem;
   }
   html {
-    font-size: 56%;
+    font-size: 52%;
   }
-  nav {
-    width: 18rem;
+  .comp-name {
+    display: none !important;
   }
   .content {
-    width: 10rem;
-    padding: 0.5rem;
+    display: none !important;
+  }
+  nav {
+    width: 4.5rem;
+  }
+  .nav-wrapper {
+    width: 5rem;
+  }
+  header {
+    width: 5rem;
+    justify-content: center;
+    padding: 1.1rem 0;
+  }
+  header .logo {
+    margin: 0 auto;
   }
   .sidebar {
     width: 5rem;
@@ -1294,66 +1350,24 @@ label {
     font-size: 2rem;
     padding: 1.5rem 0;
   }
-  .sub-nav__content--button {
-    font-size: 1.1rem;
-  }
-  .sub-nav__content__sub-category-item .sub-category {
-    padding-left: 0;
-    font-size: 1rem;
-  }
-  .sub-nav__content--button ion-icon {
-    font-size: 1.2rem;
-  }
   header .logo {
     padding: 1.1rem;
   }
   header .logo img {
-    height: 2.8rem;
-    width: 2.8rem;
-  }
-  header .comp-name {
-    width: 100%;
-    padding: 1.5rem;
-  }
-  header .main-heading {
-    font-size: 1.8rem;
-  }
-  header .sub-heading {
-    font-size: 1rem;
-  }
-  .question-mark {
-    bottom: 1rem;
-    left: 1rem;
-  }
-  .comp-name {
-    padding: 0.5rem;
+    height: 2.9rem;
+    width: 2.9rem;
   }
   .main-1 {
-    width: 50%;
-  }
-  .main-content {
-    padding: 3rem 2rem;
-  }
-  .projects-grid {
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
-    gap: 1.5rem;
-    min-height: 25rem;
-    overflow-y: auto;
-    padding: 0;
-    padding-bottom: 1.5rem;
-  }
-  .projects-grid::-webkit-scrollbar {
-    display: none;
-  }
-  .project-card {
-    height: 28rem;
+    width: 58%;
   }
   .main-2 {
-    width: 45%;
+    width: 40%;
   }
   .right-sidebar {
     padding: 3rem 2rem;
+  }
+  .main-content {
+    padding: 2rem;
   }
   .top-row {
     gap: 1.5rem;
@@ -1374,7 +1388,7 @@ label {
     gap: 1rem;
   }
   .project-card {
-    height: 20rem;
+    height: 32rem;
   }
   .project-header {
     margin-bottom: 2rem;
@@ -1435,17 +1449,22 @@ label {
     font-size: 1.2rem;
   }
   .question-mark {
-    bottom: 0.5rem;
-    left: 0.8rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .projects-grid {
+    gap: 1rem;
   }
 }
-/* Tablet Portrait */
 @media (min-width: 740px) and (max-width: 980px) {
   html {
     font-size: 56%;
   }
   nav {
-    width: 18rem;
+    width: 24rem;
+  }
+  header .sub-heading {
+    line-height: 1.2;
   }
   .content {
     width: 10rem;
@@ -1492,9 +1511,6 @@ label {
   .comp-name {
     padding: 0.5rem;
   }
-  .main-1 {
-    width: 50%;
-  }
   .main-content {
     padding: 3rem 2rem;
   }
@@ -1502,7 +1518,7 @@ label {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
     gap: 1.5rem;
-    min-height: 25rem;
+    min-height: 35rem;
     overflow-y: auto;
     padding: 2rem;
   }
@@ -1510,13 +1526,13 @@ label {
     display: none;
   }
   .project-card {
-    height: 28rem;
+    height: 32rem;
   }
   .main-2 {
     width: 45%;
   }
   .right-sidebar {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
   .top-row {
     gap: 1.5rem;
@@ -1535,9 +1551,6 @@ label {
   .daily-tasks .tasks-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-  .project-card {
-    height: 20rem;
   }
   .project-header {
     margin-bottom: 2rem;
@@ -1602,8 +1615,10 @@ label {
     left: 0.8rem;
   }
 }
-/* Tablet Landscape */
 @media (min-width: 981px) and (max-width: 1033px) {
+  header .sub-heading {
+    line-height: 1.2;
+  }
   html {
     font-size: 58%;
   }
@@ -1625,9 +1640,10 @@ label {
   }
   .main-content {
     padding: 3rem 2rem;
+    padding-top: 2rem;
   }
   .project-card {
-    height: 25rem;
+    height: 32rem;
   }
   .project-header {
     margin-bottom: 1.5rem;
@@ -1652,11 +1668,10 @@ label {
     gap: 1rem;
   }
   .reminder-title {
-    width: 80%;
+    width: 100%;
   }
   .reminder-item {
     gap: 1rem;
-    width: 100%;
   }
   .stat-value {
     font-size: 1.4rem;
@@ -1679,9 +1694,6 @@ label {
   .add-project-btn {
     padding: 1rem 2rem;
   }
-  .daily-tasks .task-item {
-    min-height: 10rem;
-  }
   .daily-tasks .task-text {
     font-size: 1.2rem;
     width: 100%;
@@ -1690,35 +1702,33 @@ label {
     font-size: 1.2rem;
   }
 }
-/* Small Desktop */
-@media (min-width: 1034px) and (max-width: 1200px) {
+@media (min-width: 1033px) and (max-width: 1200px) {
   html {
     font-size: 60%;
   }
   nav {
     width: 40rem;
   }
+  header .sub-heading {
+    line-height: 1.2;
+  }
   .reminder {
     gap: 1rem;
   }
   .reminder-title {
-    width: 80%;
+    width: 100%;
   }
   .reminder-item {
     gap: 1rem;
-    width: 100%;
   }
   .content {
     padding: 1.5rem;
   }
   .main-1 {
-    width: 60%;
+    width: 65%;
   }
   .main-content {
-    padding: 3rem;
-  }
-  .project-card {
-    height: 27rem;
+    padding: 2rem;
   }
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1733,43 +1743,32 @@ label {
   .top-row {
     margin-bottom: 2.8rem;
   }
-  .main-2 {
-    width: 40%;
-  }
   .right-sidebar {
     padding: 3rem;
-  }
-  .daily-tasks .task-item {
-    min-height: 10rem;
   }
   .daily-tasks .task-text {
     font-size: 1.2rem;
     width: 100%;
   }
-  .stats-content {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  .stat-value {
-    font-size: 1.4rem;
-  }
   .team-avatars-list {
     gap: 0.8rem;
   }
   .team-avatar img {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .team-avatar.member3,
   .team-avatar.add-member {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
-/* Medium Desktop */
-@media (min-width: 1201px) and (max-width: 1400px) {
+@media (min-width: 1201px) and (max-width: 1300px) {
+  header .sub-heading {
+    line-height: 1.2;
+  }
   html {
-    font-size: 61%;
+    font-size: 68%;
   }
   .layout {
     overflow-x: auto;
@@ -1777,16 +1776,82 @@ label {
   .reminder {
     gap: 1rem;
   }
+  .reminder-title {
+    width: 100%;
+  }
   .reminder-item {
     gap: 1rem;
   }
-}
-@media (min-width: 1401px) {
-  html {
-    font-size: 62.5%;
+  .reminder-btn {
+    width: 50%;
   }
-  .layout {
-    overflow: hidden;
+  .main-content {
+    padding: 2rem;
+    padding-top: 3rem;
+  }
+  .right-sidebar {
+    padding: 2.5rem;
+    padding-top: 4rem;
+  }
+  .projects-grid {
+    gap: 1rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1600px) {
+  html {
+    font-size: 72%;
+  }
+  header .sub-heading {
+    line-height: 1.2;
+  }
+  .reminder {
+    gap: 1rem;
+  }
+  .reminder-title {
+    width: 100%;
+  }
+  .reminder-item {
+    gap: 1rem;
+  }
+  .reminder-btn {
+    width: 50%;
+  }
+  .main-content {
+    padding: 2rem;
+    padding-top: 3rem;
+  }
+  .right-sidebar {
+    padding: 2.5rem;
+    padding-top: 4rem;
+  }
+  .projects-grid {
+    gap: 1rem;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1800px) {
+  html {
+    font-size: 78%;
+  }
+  header .sub-heading {
+    line-height: 1.2;
+  }
+  .stats-content {
+    gap: 2.5rem;
+  }
+  .main-2 {
+    width: 32%;
+  }
+  .main-content {
+    padding: 3rem;
+  }
+  .right-sidebar {
+    padding: 3rem;
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 80.5%;
   }
 }
 .mobile-menu-toggle {
@@ -1823,7 +1888,7 @@ label {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 102.4rem) {
   .main-1,
   .main-2 {
     height: auto;
@@ -1831,22 +1896,6 @@ label {
   .right-sidebar {
     height: 100vh;
   }
-}
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: "Poppins";
 }
 
 /*# sourceMappingURL=style.css.map */

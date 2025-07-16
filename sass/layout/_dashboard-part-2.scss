@@ -2,11 +2,13 @@
 .main-2 {
   height: 100vh;
 }
+.main-2 {
+  width: 45%;
+}
 .right-sidebar {
   height: 100vh;
   background-color: $color-white;
   padding: 5rem;
-  padding-top: 3.8rem;
   box-shadow: -0.1rem 0px 2rem 0.1rem #e9e9e9;
 }
 
@@ -14,7 +16,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 3.4rem;
 }
 
 .top-row {
@@ -30,7 +32,7 @@
   border: none;
   font-family: "poppins";
   padding: 1.2rem 2.3rem;
-  border-radius: 20px;
+  border-radius: 2rem;
   font-size: 1.2rem;
   font-weight: 300;
   cursor: pointer;
@@ -70,11 +72,11 @@
 
   .notification-dot {
     position: absolute;
-    top: 4px;
+    top: 0.4rem;
     right: 0.3rem;
     width: 0.7rem;
     height: 0.7rem;
-    border: 0.01px solid $color-white;
+    border: 0.001rem solid $color-white;
     background: $color-orange-1;
     border-radius: 50%;
     z-index: 1;
@@ -82,23 +84,23 @@
 }
 
 .user-avatar img {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   background-color: #d4a574;
 }
 
 .user-name {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 .user-type {
   color: $color-grey-light;
 }
 .dropdown-arrow ion-icon {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: $color-orange-1;
   background-color: $color-orange-light-1;
   padding: 0.2rem;
@@ -111,9 +113,9 @@
 }
 
 .team-members h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .team-avatars-list {
@@ -127,7 +129,7 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  border: 2px solid $color-white;
+  border: 0.2rem solid $color-white;
 }
 
 .team-avatar.member3 {
@@ -140,7 +142,7 @@
   justify-content: center;
   border-radius: 50%;
   font-size: 1.5rem;
-  border: 2px solid $color-white;
+  border: 0.2rem solid $color-white;
 }
 
 .team-avatar.add-member {
@@ -149,7 +151,7 @@
   align-items: center;
   justify-content: center;
   color: $color-orange-1;
-  font-size: 20px;
+  font-size: 2rem;
   border-radius: 50%;
   border: 0.18rem dashed $color-orange-1;
   width: 3rem;
@@ -159,25 +161,26 @@
 
 .stats-grid {
   background-color: $color-white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
 }
 
 .stats-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1rem;
 }
 
 .stat-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .stat-label {
-  font-size: 12px;
+  font-size: 1.4rem;
   color: #666;
   margin-bottom: 0.2rem;
 }
@@ -209,25 +212,22 @@
   }
 
   .tasks-grid {
-    padding: 5px;
-    max-height: 290px;
-    overflow-y: auto;
-    padding-right: 5px;
+    padding: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 1.6rem;
   }
   .tasks-grid::-webkit-scrollbar {
     display: none;
   }
 
   .task-item {
-    border-radius: 16px;
-    padding: 16px;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
     min-height: 14rem;
     position: relative;
     background: $color-white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -239,15 +239,15 @@
     &.add-new {
       background-color: $color-light-bg;
       .add-header {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 500;
       }
 
       .add-plus {
-        font-size: 24px;
+        font-size: 2.4rem;
         position: absolute;
-        bottom: 16px;
-        right: 16px;
+        bottom: 1.6rem;
+        right: 1.6rem;
       }
     }
   }
@@ -261,8 +261,8 @@
     .task-status-row {
       display: flex;
       align-items: center;
-      gap: 6px;
-      font-size: 12px;
+      gap: 0.6rem;
+      font-size: 1.2rem;
       font-weight: 500;
 
       &.white {
@@ -270,8 +270,8 @@
       }
 
       .dot {
-        width: 8px;
-        height: 8px;
+        width: 0.8rem;
+        height: 0.8rem;
         border-radius: 50%;
 
         &.red {
@@ -290,8 +290,8 @@
 
     .checkbox {
       position: relative;
-      width: 20px;
-      height: 20px;
+      width: 2rem;
+      height: 2rem;
       display: flex;
       align-items: center;
 
@@ -302,10 +302,10 @@
       }
 
       .checkmark {
-        width: 20px;
-        height: 20px;
+        width: 2rem;
+        height: 2rem;
         border: 1.5px solid $color-orange-1;
-        border-radius: 4px;
+        border-radius: 0.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -313,7 +313,7 @@
         transition: all 0.2s ease;
 
         ion-icon {
-          font-size: 14px;
+          font-size: 1.4rem;
           opacity: 0;
           color: $color-white;
         }
@@ -331,11 +331,11 @@
   }
 
   .task-text {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.4;
     width: 90%;
-    margin-top: 12px;
+    margin-top: 1.2rem;
 
     &.white-text {
       color: $color-white;
