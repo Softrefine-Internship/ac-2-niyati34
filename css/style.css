@@ -159,11 +159,35 @@ label {
   font-weight: 600;
 }
 .sub-nav__content__sub-category-item .sub-category {
-  width: 80%;
+  position: relative;
   display: flex;
   gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
   font-size: 1.4rem;
-  padding-left: 2rem;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1;
+  transition: color 0.2s ease-in-out;
+  overflow: hidden;
+}
+.sub-nav__content__sub-category-item .sub-category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+  background-color: #262626;
+  z-index: -1;
+  transition: width 0.2s ease-in-out;
+}
+.sub-nav__content__sub-category-item .sub-category:hover::before {
+  width: 100%;
+}
+.sub-nav__content__sub-category-item .sub-category:hover {
+  color: white;
 }
 .sub-nav__content__sub-category-item a {
   text-decoration: none;
