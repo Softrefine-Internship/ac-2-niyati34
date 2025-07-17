@@ -79,6 +79,9 @@ header {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  min-height: 0;
+  scroll-behavior: smooth;
 }
 .panel {
   display: none;
@@ -86,6 +89,13 @@ header {
   gap: 1rem;
   font-size: 1.5rem;
   color: #333;
+  overflow-y: auto;
+  max-height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.panel::-webkit-scrollbar {
+  display: none;
 }
 input[type="radio"] {
   display: none;

@@ -84,6 +84,9 @@ header .sub-heading {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  min-height: 0;
+  scroll-behavior: smooth;
 }
 
 .panel {
@@ -92,6 +95,14 @@ header .sub-heading {
   gap: 1rem;
   font-size: 1.5rem;
   color: #333;
+  overflow-y: auto;
+  max-height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.panel::-webkit-scrollbar {
+  display: none;
 }
 
 input[type=radio] {
@@ -887,7 +898,7 @@ label {
 }
 
 html {
-  font-size: 80.5%;
+  font-size: 47.5%;
 }
 
 body {
@@ -1054,10 +1065,10 @@ body {
   }
   .sub-nav__content__sub-category-item .sub-category {
     display: flex;
-    padding: 0.2rem 0;
+    padding: 1rem 0.9rem;
     text-decoration: none;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .question-mark {
     position: fixed;
@@ -1087,11 +1098,12 @@ body {
   }
   .main-2 {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .right-sidebar {
     padding: 2rem 1.5rem;
     box-shadow: none;
+    height: auto;
   }
   .reminders-section {
     margin-bottom: 0;
@@ -1106,6 +1118,12 @@ body {
   }
   .content {
     padding-top: 7rem;
+  }
+  .stats-grid {
+    margin-bottom: 4rem;
+  }
+  .daily-tasks {
+    margin-bottom: 4rem;
   }
 }
 @media (min-width: 481px) and (max-width: 666px) {
@@ -1271,7 +1289,7 @@ body {
   }
   .sub-nav__content__sub-category-item .sub-category {
     display: flex;
-    padding: 1.2rem 0;
+    padding: 1.2rem 0.9rem;
     text-decoration: none;
     color: #666;
     font-size: 1.3rem;
@@ -1309,12 +1327,19 @@ body {
   .right-sidebar {
     padding: 2.5rem 2rem;
     box-shadow: none;
+    height: auto;
   }
   .reminders-section {
     margin-bottom: 0;
   }
   .content {
     padding-top: 7rem;
+  }
+  .stats-grid {
+    margin-bottom: 4rem;
+  }
+  .daily-tasks {
+    margin-bottom: 5rem;
   }
 }
 @media (min-width: 667px) {
@@ -1330,14 +1355,13 @@ body {
     color: #333;
     z-index: 1400;
   }
+  .nav-wrapper,
+  .main-1,
+  .main-2 {
+    transition: all 0.3s ease;
+  }
 }
-.nav-wrapper,
-.main-1,
-.main-2 {
-  transition: all 0.3s ease;
-}
-
-@media (min-width: 667px) and (max-width: 739px) {
+@media (min-width: 667px) and (max-width: 980px) {
   .reminder-title {
     font-size: 1.2rem;
   }
@@ -1407,10 +1431,6 @@ body {
     flex-wrap: wrap;
     gap: 0.8rem;
   }
-  .daily-tasks .tasks-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
   .project-card {
     height: 32rem;
   }
@@ -1478,165 +1498,6 @@ body {
   }
   .projects-grid {
     gap: 1rem;
-  }
-}
-@media (min-width: 740px) and (max-width: 980px) {
-  html {
-    font-size: 56%;
-  }
-  nav {
-    width: 24rem;
-  }
-  header .sub-heading {
-    line-height: 1.2;
-  }
-  .content {
-    width: 10rem;
-    padding: 0.5rem;
-  }
-  .sidebar {
-    width: 5rem;
-  }
-  .icon {
-    font-size: 2rem;
-    padding: 1.5rem 0;
-  }
-  .sub-nav__content--button {
-    font-size: 1.1rem;
-  }
-  .sub-nav__content__sub-category-item .sub-category {
-    padding-left: 0;
-    font-size: 1rem;
-  }
-  .sub-nav__content--button ion-icon {
-    font-size: 1.2rem;
-  }
-  header .logo {
-    padding: 1.1rem;
-  }
-  header .logo img {
-    height: 2.8rem;
-    width: 2.8rem;
-  }
-  header .comp-name {
-    width: 100%;
-    padding: 1.5rem;
-  }
-  header .main-heading {
-    font-size: 1.8rem;
-  }
-  header .sub-heading {
-    font-size: 1rem;
-  }
-  .question-mark {
-    bottom: 1rem;
-    left: 1rem;
-  }
-  .comp-name {
-    padding: 0.5rem;
-  }
-  .main-content {
-    padding: 3rem 2rem;
-  }
-  .projects-grid {
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
-    gap: 1.5rem;
-    min-height: 35rem;
-    overflow-y: auto;
-    padding: 2rem;
-  }
-  .projects-grid::-webkit-scrollbar {
-    display: none;
-  }
-  .project-card {
-    height: 32rem;
-  }
-  .main-2 {
-    width: 45%;
-  }
-  .right-sidebar {
-    padding: 4rem 2rem;
-  }
-  .top-row {
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .add-project-btn {
-    width: 100%;
-  }
-  .user-info {
-    justify-content: space-between;
-  }
-  .team-avatars-list {
-    flex-wrap: wrap;
-    gap: 0.8rem;
-  }
-  .daily-tasks .tasks-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .project-header {
-    margin-bottom: 2rem;
-  }
-  .project-deadline {
-    margin-bottom: 2rem;
-  }
-  .reminder {
-    gap: 1rem;
-    padding: 1.5rem;
-  }
-  .reminder-title {
-    width: 100%;
-  }
-  .reminder-item {
-    gap: 1rem;
-    width: 100%;
-  }
-  .user-info {
-    justify-content: flex-end;
-  }
-  .stat-value {
-    font-size: 1.4rem;
-  }
-  .three-dots-1 {
-    gap: 0.3rem;
-  }
-  .three-dots-1 span {
-    width: 0.5rem;
-    height: 0.5rem;
-  }
-  .team-avatars-list {
-    gap: 0.3rem;
-  }
-  .team-avatar img {
-    width: 3.65rem;
-    height: 3.65rem;
-  }
-  .team-avatar.member3,
-  .team-avatar.add-member {
-    width: 3.65rem;
-    height: 3.65rem;
-  }
-  .add-project-btn {
-    padding: 1rem 1rem;
-  }
-  .stats-grid {
-    margin-bottom: 2rem;
-  }
-  .daily-tasks .task-item {
-    min-height: 10rem;
-  }
-  .daily-tasks .task-text {
-    font-size: 1.2rem;
-    width: 100%;
-  }
-  .daily-tasks .task-item.add-new .add-header {
-    font-size: 1.2rem;
-  }
-  .question-mark {
-    bottom: 0.5rem;
-    left: 0.8rem;
   }
 }
 @media (min-width: 981px) and (max-width: 1033px) {
@@ -1644,7 +1505,7 @@ body {
     line-height: 1.2;
   }
   html {
-    font-size: 58%;
+    font-size: 47.5%;
   }
   nav {
     width: 30rem;
@@ -1728,7 +1589,7 @@ body {
 }
 @media (min-width: 1033px) and (max-width: 1200px) {
   html {
-    font-size: 60%;
+    font-size: 53.5%;
   }
   nav {
     width: 40rem;
@@ -1759,6 +1620,7 @@ body {
     grid-auto-flow: row;
     gap: 1.5rem;
     height: auto;
+    margin-bottom: 2rem;
   }
   .sub-nav__content__sub-category-item .sub-category {
     padding-left: 0.8rem;
@@ -1792,7 +1654,7 @@ body {
     line-height: 1.2;
   }
   html {
-    font-size: 68%;
+    font-size: 52.5%;
   }
   .layout {
     overflow-x: auto;
@@ -1823,7 +1685,7 @@ body {
 }
 @media (min-width: 1300px) and (max-width: 1600px) {
   html {
-    font-size: 72%;
+    font-size: 58%;
   }
   header .sub-heading {
     line-height: 1.2;
@@ -1854,7 +1716,7 @@ body {
 }
 @media (min-width: 1600px) and (max-width: 1800px) {
   html {
-    font-size: 78%;
+    font-size: 60%;
   }
   header .sub-heading {
     line-height: 1.2;
@@ -1875,7 +1737,7 @@ body {
 }
 @media (min-width: 1800px) {
   html {
-    font-size: 80.5%;
+    font-size: 64.5%;
   }
 }
 .mobile-menu-toggle {
@@ -1916,9 +1778,6 @@ body {
   .main-1,
   .main-2 {
     height: auto;
-  }
-  .right-sidebar {
-    height: 100vh;
   }
 }
 
